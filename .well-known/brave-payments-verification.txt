@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: monadnoc.github.io
+Token: 780aea8fad2f57ba18bbdc0aaaad9f818c529193c65294bd47f85b814c36546e
