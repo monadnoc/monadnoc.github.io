@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Jordan N</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link href="https://monadnoc.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Jordan N Full Atom Feed" />
+        <link href="https://monadnoc.github.io/feeds/releases.atom.xml" type="application/atom+xml" rel="alternate" title="Jordan N Categories Atom Feed" />
+        <!-- twitter card metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://monadnoc.github.io/images/site-cover.jpg">
+<meta name="twitter:creator" content="@nerrlerryday">
+<meta name="twitter:site" content="@nerrlerryday">
+<meta name="twitter:title" content="Version 1.0 of 'Brutalist' released!">
+<meta name="twitter:description" content="I'm excited to release the first version of the Pelican theme I've been working on. This post contains all the details you need to get up and running. For those interested, I also listed some of the tools I used to build the theme along with some of my design rationale, which may be helpful if you are looking to extend the theme and make it your own.">
+        <!-- OG Tags -->
+<meta property="og:url" content="https://monadnoc.github.io/2018/08/22/version-10-of-brutalist-released/"/>
+<meta property="og:title" content="Jordan N | Version 1.0 of 'Brutalist' released!" />
+<meta property="og:description" content="I'm excited to release the first version of the Pelican theme I've been working on. This post contains all the details you need to get up and running. For those interested, I also listed some of the tools I used to build the theme along with some of my design rationale, which may be helpful if you are looking to extend the theme and make it your own." />
+<meta property="og:image" content="https://monadnoc.github.io/images/site-cover.jpg" />
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="https://monadnoc.github.io/images/pelly.png">
+        <!-- moment.js for date formatting -->
+        <script src="https://monadnoc.github.io/theme/js/moment.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="https://monadnoc.github.io/theme/css/main.css" />
+		<script>
+			
+                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    
+    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+                
+                grunticon(["https://monadnoc.github.io/theme/css/icons.data.svg.css", "https://monadnoc.github.io/theme/css/icons.data.png.css", "https://monadnoc.github.io/theme/css/icons.fallback.css"]);
+            </script>
+        <noscript><link href="https://monadnoc.github.io/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
+        <!-- menu toggle javascript -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", initMenu);
+            
+            function initMenu(){
+                var menu = document.getElementById("menu");
+                var menulink = document.getElementById("menu-link");
+                menulink.addEventListener("click", function toggleMenu(){
+                        window.event.preventDefault();
+                        menulink.classList.toggle('active');
+                        menu.classList.toggle('active');              
+                    });
+            };
+        </script>
+
+    <meta name="description" content="I'm excited to release the first version of the Pelican theme I've been working on. This post contains all the details you need to get up and running. For those interested, I also listed some of the tools I used to build the theme along with some of my design rationale, which may be helpful if you are looking to extend the theme and make it your own." />
+
+
+</head>
+<body>
+    <div role="banner" id="masthead">
+        <header>
+            <a href="/"><img src="https://www.gravatar.com/avatar/b250ebf2d0ef095eb8c1dc253513dbc2" alt="Matt McManus Avatar" class="gravatar"></a>
+            <a href="#menu" id="menu-link">more stuff</a>
+            <nav id="menu">
+                <ul>
+                        <li><a href="https://monadnoc.github.io/pages/example-page/">example-page</a></li>
+                        <li><a href="/tags">tags</a></li>
+                            <li><a href="https://monadnoc.github.io/category/example-category">example category</a></li>
+                            <li class="active"><a href="https://monadnoc.github.io/category/releases">releases</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <div class="page" role="main">
+  <div class="article" role="article">
+    <article>
+        <footer>
+            <a name="top"></a>
+            <p>
+              <time datetime=" 2018-08-22 00:00:00-05:00">
+                <script>document.write(moment('2018-08-22 00:00:00-05:00').format('LL'));</script>
+              </time>
+            </p>
+        </footer>
+        <header>
+          <h2>
+            Version 1.0 of 'Brutalist' released!
+          </h2>
+        </header>
+      <div class="content">
+         <p><img alt="Brutalist Pelican Theme" src="https://monadnoc.github.io/images/site-cover.jpg" title="Brutalist Pelican Theme"> </p>
+<h2>Background and Inspiration</h2>
+<p>When I decided to get back into blogging, I knew that I wanted a site that was super simple and readable. There are many great Pelican themes out there but I couldn't quite find what I was looking for. After reading David Bryant Copeland's <a href="https://brutalist-web.design/">Brutalist Web Design</a> a few weeks ago, I was inspired to try and apply those design principles to a Pelican theme. The goal of this theme is to be feature-rich while also accessible and fast. This release is just 1.0. I'll be adding more features as I shake off the front-end coding rust. </p>
+<h2>Features</h2>
+<ul>
+<li>Clean, readable, accessible, and fast</li>
+<li>Mobile first</li>
+<li>W3C validated</li>
+<li>Clean slugified URLs</li>
+<li>Easy to extend and customize to your liking</li>
+<li>SEO optimized w/ OG tags and Twitter Card support</li>
+<li>Google Analytics support</li>
+<li>Gravatar support</li>
+<li>Disqus support</li>
+<li>Pygments syntax highlighting for code blocks</li>
+<li>Display Twitter, Github, Facebook, Instagram, Strava, Untappd, Telegram, Foursquare, and Goodreads icons in footer if configured</li>
+</ul>
+<h2>Template support</h2>
+<h3>Supported</h3>
+<ul>
+<li>archives.html</li>
+<li>period_archives.html</li>
+<li>article.html</li>
+<li>categories.html</li>
+<li>category.html</li>
+<li>index.html</li>
+<li>page.html</li>
+<li>tag.html</li>
+<li>tags.html</li>
+</ul>
+<h3>Not supported</h3>
+<ul>
+<li>author.html</li>
+<li>authors.html</li>
+</ul>
+<h2>Configuration</h2>
+<p>Here is a list of theme settings you can configure to alter aspects of the theme. The theme also supports most of the general settings that Pelican offers so I won't go into those here.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Theme Settings</span>
+<span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;themes/brutalist&#39;</span>
+<span class="c1">## used for OG tags and Twitter Card data on index page</span>
+<span class="n">SITEIMAGE</span> <span class="o">=</span> <span class="s1">&#39;site-cover.jpg&#39;</span>
+<span class="c1">## used for OG tags and Twitter Card data of index page</span>
+<span class="n">SITEDESCRIPTION</span> <span class="o">=</span> <span class="s1">&#39;A simple, accessible, content-first Pelican theme inspired by David Bryant Copeland</span><span class="se">\&#39;</span><span class="s1">s https://brutalist-web.design/&#39;</span>
+<span class="c1">## path to favicon</span>
+<span class="n">FAVICON</span> <span class="o">=</span> <span class="s1">&#39;pelly.png&#39;</span>
+<span class="c1">## path to logo for nav menu (optional)</span>
+<span class="n">LOGO</span> <span class="o">=</span> <span class="s1">&#39;pelly.png&#39;</span>
+<span class="c1">## first name for nav menu if logo isn&#39;t provided</span>
+<span class="n">FIRST_NAME</span> <span class="o">=</span> <span class="s1">&#39;Brutalist&#39;</span>
+<span class="c1">## google analytics (fake code commented out)</span>
+<span class="c1"># GOOGLE_ANALYTICS = &#39;UA-0011001-1&#39;</span>
+<span class="c1">## Twitter username for Twitter Card data</span>
+<span class="n">TWITTER_USERNAME</span> <span class="o">=</span> <span class="s1">&#39;@mcman_s&#39;</span>
+<span class="c1">## Toggle display of theme attribution in the footer (scroll down and see)</span>
+<span class="c1">## Attribution is appreciated but totally fine to turn off!</span>
+<span class="n">ATTRIBUTION</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="c1">## Add a link to the tags page to the menu</span>
+<span class="c1">## Other links can be added following the same tuple pattern </span>
+<span class="n">MENUITEMS</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;tags&#39;</span><span class="p">,</span> <span class="s1">&#39;/tags&#39;</span><span class="p">)]</span>
+<span class="c1">## Social icons for footer</span>
+<span class="c1">## Set these to whatever your unique public URL is for that platform</span>
+<span class="c1">## I&#39;ve left mine here as a example</span>
+<span class="n">STRAVA</span> <span class="o">=</span> <span class="s1">&#39;https://www.strava.com/athletes/27234301&#39;</span>
+<span class="n">TWITTER</span> <span class="o">=</span> <span class="s1">&#39;https://twitter.com/mcman_s&#39;</span>
+<span class="n">INSTAGRAM</span> <span class="o">=</span> <span class="s1">&#39;https://instagram.com/mcman_s&#39;</span>
+<span class="n">GITHUB</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/mamcmanus&#39;</span>
+<span class="n">TELEGRAM</span> <span class="o">=</span> <span class="s1">&#39;https://t.me/mcman_s&#39;</span>
+<span class="n">GOODREADS</span> <span class="o">=</span> <span class="s1">&#39;https://www.goodreads.com/user/show/48849158-matthew-mcmanus&#39;</span>
+<span class="n">FOURSQUARE</span> <span class="o">=</span> <span class="s1">&#39;https://foursquare.com/mcman_s&#39;</span>
+<span class="n">UNTAPPD</span> <span class="o">=</span> <span class="s1">&#39;https://untappd.com/user/mcman_s&#39;</span>
+<span class="c1">## Disqus Sitename for comments on posts</span>
+<span class="c1">## Commenting mine out for this theme site</span>
+<span class="n">DISQUS_SITENAME</span> <span class="o">=</span> <span class="s1">&#39;brutalistpelican&#39;</span>
+<span class="c1">## Gravatar</span>
+<span class="c1">## Commenting mine out so you can see how the theme looks without one</span>
+<span class="c1">## See https://mamcmanus.com to see what it looks like with a Gravatar</span>
+<span class="c1"># GRAVATAR = &#39;https://www.gravatar.com/avatar/a5544bcae63c5d56c0b7a3fa0ab5b295?s=256&#39;</span>
+</pre></div>
+
+
+<h2>Plugins</h2>
+<p>I use this theme on <a href="" title="https://mamcmanus.com">my site</a> with the following plugin configuration.</p>
+<div class="highlight"><pre><span></span><span class="c1"># PLUGINS</span>
+<span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;plugins&#39;</span><span class="p">]</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sitemap&#39;</span><span class="p">,</span> <span class="s1">&#39;category_order&#39;</span><span class="p">,</span> <span class="s1">&#39;w3c_validate&#39;</span><span class="p">,</span> <span class="s1">&#39;optimize_images&#39;</span><span class="p">,</span> <span class="s1">&#39;gzip_cache&#39;</span><span class="p">]</span>
+
+<span class="c1">## SITEMAP PLUGIN</span>
+<span class="n">SITEMAP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;xml&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;priorities&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;articles&#39;</span><span class="p">:</span> <span class="o">.</span><span class="mi">99</span><span class="p">,</span>
+        <span class="s1">&#39;pages&#39;</span><span class="p">:</span> <span class="o">.</span><span class="mi">75</span><span class="p">,</span>
+        <span class="s1">&#39;indexes&#39;</span><span class="p">:</span> <span class="o">.</span><span class="mi">5</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;changefreqs&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;articles&#39;</span><span class="p">:</span> <span class="s1">&#39;daily&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;pages&#39;</span><span class="p">:</span> <span class="s1">&#39;daily&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;indexes&#39;</span><span class="p">:</span> <span class="s1">&#39;daily&#39;</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2>Design and tooling choices</h2>
+<p>Some design and tooling choices I made while building this theme. Feedback welcome.</p>
+<ul>
+<li>I kept the site in a single column for now. Research shows that the optimal character count is 66 and the single column design usually lands between 50-75.</li>
+<li>I chose the Lato font face and only 3 font weights because I like the way it looks. I have received feedback that it may be too hard to read so I may add some weights or change it. Instead of using the google font API urls, each font weight was translated to its raw Data URI and packaged with the theme to improve loading performance. </li>
+<li>Same thing for the footer icons. I used one of my favorite tools, <a href="http://www.grumpicon.com/">Grumpicon</a>, to properly package the fonts. I did not introduce the entire Grumpicon JS toolchain since it seems complex and I really just needed a handful of icons.</li>
+<li>I designed in SASS instead of CSS, mostly for the same reasons I <a href="https://mamcmanus.com/2016/01/14/switching-from-css-to-sass/">outlined a few years ago</a>. </li>
+<li>For date and time display I am using <a href="https://momentjs.com/">moment.js</a>. I've been using this script for years because it is easy to get the dates and times looking exactly how you want.</li>
+<li>I attempted to get the tag design as close to Stack Overflow as possible.</li>
+</ul>
+<h2>Shout outs</h2>
+<p>Thanks to <a href="https://twitter.com/jmayer">Justin Mayer</a> for permission to use the "Powered by Pelican" logo.</p>
+<p>Contributions, ideas, and general chat welcome. Feel free to reach out on Twitter or Telegram. I'll be working to add more features over the coming months.</p>
+      </div>
+      <div class="back-to-top">
+          <a href="#top">back to top</a>
+      </div>
+      <div id="disqus_thread"></div>
+        <script>
+          var disqus_config = function () {
+          this.page.url = "https://monadnoc.github.io/2018/08/22/version-10-of-brutalist-released/";  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = "version-10-of-brutalist-released"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+        </script>
+        <script>
+        (function() {
+              var d = document, s = d.createElement('script');
+              s.src = 'https://jordann.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </article>
+  </div>
+<!-- end article -->
+                <footer>
+                    <div class="icons">
+                        <a href="https://twitter.com/nerrlyerrday" target="_blank"><div class="icon-twitter icon"></div></a>
+                        <a href="https://github.com/monadnoc" target="_blank"><div class="icon-github icon"></div></a>
+                    </div>
+                    <p>© <script>document.write(moment().format('YYYY'));</script> Jordan Nelson</p>
+ 
+                    <p><i>"Brutal"</i> Pelican Theme</p>
+                    <p>Designed and built by <a href="http://twitter.com/mcman_s">@mcman_s</a> in Denver</p>
+                </footer>
+        </div>
+</body>
+</html>
