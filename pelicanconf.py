@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Jordan Nelson'
-SITENAME = 'Jordan N'
-SITEURL = 'jordann.me'
+SITENAME = 'JNN Personal Site'
+SITEURL = 'itsnotyou-its.me'
 
 # Categories
 USE_FOLDER_AS_CATEGORY = True
@@ -52,7 +52,7 @@ SITEIMAGE = 'site-cover.jpg'
 ## used for OG tags and Twitter Card data of index page
 SITEDESCRIPTION = 'Personal website for Jordan Nelson'
 ## path to favicon
-FAVICON = 'pelly.png'
+FAVICON = 'favi.png'
 ## path to logo for nav menu (optional)
 #LOGO = 'pelly.png'
 ## first name for nav menu if logo isn't provided
@@ -63,7 +63,7 @@ FIRST_NAME = 'Jordan'
 TWITTER_USERNAME = '@nerrlerryday'
 ## Toggle display of theme attribution in the footer (scroll down and see)
 ## Attribution is appreciated but totally fine to turn off!
-ATTRIBUTION = True
+# ATTRIBUTION = True
 ## Add a link to the tags page to the menu
 ## Other links can be added following the same tuple pattern 
 MENUITEMS = [('tags', '/tags')]
@@ -80,7 +80,7 @@ GITHUB = 'https://github.com/monadnoc'
 #UNTAPPD = 'https://untappd.com/user/mcman_s'
 ## Disqus Sitename for comments on posts
 ## Commenting mine out for this theme site
-DISQUS_SITENAME = 'jordann'
+DISQUS_SITENAME = 'jordannn'
 ## Gravatar
 GRAVATAR = 'https://www.gravatar.com/avatar/b250ebf2d0ef095eb8c1dc253513dbc2'
 
