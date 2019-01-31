@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Jordan Nelson'
-SITENAME = 'JNN Personal Site'
-SITEURL = 'itsnotyou-its.me'
+SITENAME = 'JNN\'s Site'
+SITEURL = ''
 
 # Categories
 USE_FOLDER_AS_CATEGORY = True
@@ -48,11 +48,11 @@ PAGINATION_PATTERNS = (
 # Theme Settings
 THEME = 'themes/brutalist'
 ## used for OG tags and Twitter Card data on index page
-SITEIMAGE = 'site-cover.jpg'
+#SITEIMAGE = 'site-cover.jpg'
 ## used for OG tags and Twitter Card data of index page
 SITEDESCRIPTION = 'Personal website for Jordan Nelson'
 ## path to favicon
-FAVICON = 'favi.png'
+FAVICON = 'jordan_marsh.png'
 ## path to logo for nav menu (optional)
 #LOGO = 'pelly.png'
 ## first name for nav menu if logo isn't provided
@@ -71,7 +71,7 @@ MENUITEMS = [('tags', '/tags')]
 ## Set these to whatever your unique public URL is for that platform
 ## I've left mine here as a example
 #STRAVA = 'https://www.strava.com/athletes/27234301'
-TWITTER = 'https://twitter.com/nerrlyerrday'
+#TWITTER = 'https://twitter.com/nerrlyerryday'
 INSTAGRAM = 'https://instagram.com/monadknock'
 GITHUB = 'https://github.com/monadnoc'
 #TELEGRAM = 'https://t.me/mcman_s'
@@ -80,7 +80,7 @@ GITHUB = 'https://github.com/monadnoc'
 #UNTAPPD = 'https://untappd.com/user/mcman_s'
 ## Disqus Sitename for comments on posts
 ## Commenting mine out for this theme site
-DISQUS_SITENAME = 'jordannn'
+#DISQUS_SITENAME = 'jordannn'
 ## Gravatar
 GRAVATAR = 'https://www.gravatar.com/avatar/b250ebf2d0ef095eb8c1dc253513dbc2'
 
@@ -104,7 +104,3 @@ SITEMAP = {
     },
 }
 
-## Github URL for fork ribbon
-## Only used on theme site, not personal blog
-#GITHUB_URL = 'https://github.com/mamcmanus/brutalistpelican'
-#GITHUB_POSITION = 'left'
