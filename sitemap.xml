@@ -4,63 +4,63 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/</loc>
-<lastmod>2019-01-30T23:25:02-00:00</lastmod>
+<loc>monadnoc.github.io/</loc>
+<lastmod>2019-01-30T23:41:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2019-01-30T23:25:02-00:00</lastmod>
+<loc>monadnoc.github.io/archives.html</loc>
+<lastmod>2019-01-30T23:41:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2019-01-30T23:25:02-00:00</lastmod>
+<loc>monadnoc.github.io/tags.html</loc>
+<lastmod>2019-01-30T23:41:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2019-01-30T23:25:02-00:00</lastmod>
+<loc>monadnoc.github.io/categories.html</loc>
+<lastmod>2019-01-30T23:41:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pages/about/</loc>
-<lastmod>2019-01-30T23:25:02-00:00</lastmod>
+<loc>monadnoc.github.io/pages/about/</loc>
+<lastmod>2019-01-30T23:41:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.75</priority>
 </url>
 
 <url>
-<loc>/2019/01/30/about/</loc>
+<loc>monadnoc.github.io/2019/01/30/about/</loc>
 <lastmod>2019-01-30T00:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.99</priority>
 </url>
 
 <url>
-<loc>/2019/01/29/filler/</loc>
+<loc>monadnoc.github.io/2019/01/29/filler/</loc>
 <lastmod>2019-01-29T00:00:00-06:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.99</priority>
 </url>
 
 <url>
-<loc>/category/misc</loc>
+<loc>monadnoc.github.io/category/misc</loc>
 <lastmod>2019-01-30T00:00:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/placeholder</loc>
+<loc>monadnoc.github.io/category/placeholder</loc>
 <lastmod>2019-01-29T00:00:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
