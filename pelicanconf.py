@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Jordan Nelson'
 SITENAME = 'JNN\'s Site'
-SITEURL = ''
+SITEURL = 'http://www.itsnotyou-its.me'
 
 # Categories
 USE_FOLDER_AS_CATEGORY = True
