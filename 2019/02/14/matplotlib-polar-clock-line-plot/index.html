@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>JNN's Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link href="http://www.itsnotyou-its.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="JNN's Site Full Atom Feed" />
+        <link href="http://www.itsnotyou-its.me/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="JNN's Site Categories Atom Feed" />
+        <!-- twitter card metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.gravatar.com/avatar/b250ebf2d0ef095eb8c1dc253513dbc2">
+<meta name="twitter:site" content="@nerrlerryday">
+<meta name="twitter:title" content="matplotlib polar clock line plot">
+<meta name="twitter:description" content="functional Python code for generating a matplotlib polar clock line plot">
+        <!-- OG Tags -->
+<meta property="og:url" content="http://www.itsnotyou-its.me/2019/02/14/matplotlib-polar-clock-line-plot/"/>
+<meta property="og:title" content="JNN's Site | matplotlib polar clock line plot" />
+<meta property="og:description" content="functional Python code for generating a matplotlib polar clock line plot" />
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="http://www.itsnotyou-its.me/images/jordan_marsh.png">
+        <!-- moment.js for date formatting -->
+        <script src="http://www.itsnotyou-its.me/theme/js/moment.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="http://www.itsnotyou-its.me/theme/css/main.css" />
+		<script>
+			
+                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    
+    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+                
+                grunticon(["http://www.itsnotyou-its.me/theme/css/icons.data.svg.css", "http://www.itsnotyou-its.me/theme/css/icons.data.png.css", "http://www.itsnotyou-its.me/theme/css/icons.fallback.css"]);
+            </script>
+        <noscript><link href="http://www.itsnotyou-its.me/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
+        <!-- menu toggle javascript -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", initMenu);
+            
+            function initMenu(){
+                var menu = document.getElementById("menu");
+                var menulink = document.getElementById("menu-link");
+                menulink.addEventListener("click", function toggleMenu(){
+                        window.event.preventDefault();
+                        menulink.classList.toggle('active');
+                        menu.classList.toggle('active');              
+                    });
+            };
+        </script>
+
+    <meta name="description" content="functional Python code for generating a matplotlib polar clock line plot" />
+
+    <meta name="tags" content="python" />
+    <meta name="tags" content="matplotlib" />
+    <meta name="tags" content="time series" />
+    <meta name="tags" content="polar" />
+    <meta name="tags" content="cyclic" />
+
+</head>
+<body>
+    <div role="banner" id="masthead">
+        <header>
+            <a href="/"><img src="https://www.gravatar.com/avatar/b250ebf2d0ef095eb8c1dc253513dbc2" alt="Matt McManus Avatar" class="gravatar"></a>
+            <a href="#menu" id="menu-link">more stuff</a>
+            <nav id="menu">
+                <ul>
+                        <li><a href="http://www.itsnotyou-its.me/pages/aboutme/">aboutme</a></li>
+                        <li><a href="/tags">tags</a></li>
+                            <li><a href="http://www.itsnotyou-its.me/category/placeholder">placeholder</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <div class="page" role="main">
+  <div class="article" role="article">
+    <article>
+        <footer>
+            <a name="top"></a>
+            <p>
+              <time datetime=" 2019-02-14 00:00:00-06:00">
+                <script>document.write(moment('2019-02-14 00:00:00-06:00').format('LL'));</script>
+              </time>
+            </p>
+        </footer>
+        <header>
+          <h2>
+            matplotlib polar clock line plot
+          </h2>
+        </header>
+      <div class="content">
+         <h3>When plotting a line with a time (24 hour) cycle across the x-axis like...</h3>
+<p><img alt="lineplot_timeseries" src="images/timeseries_lineplot.svg">
+...a polar plot that cycles back onto itself makes a lot more sense.</p>
+<p>Here's a simple example with subplots. The data here is downsampled into hours, so a binned histogram would be fine, but a line plot is utilized here to increase sense of area-under-the-curve and relationship between points. Ideally, this could be generalized to much smaller binned time increments that might otherwise be too fine for histograms. For that, the tick axis should be intelligently redesigned with <code>matplotlib.dates</code>
+<img alt="lineplot_timeseries" src="images/total_time_polar_plots.svg"></p>
+<div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">time_data</span><span class="o">.</span><span class="n">n_stops</span><span class="p">,</span> <span class="n">time_data</span><span class="o">.</span><span class="n">n_searches</span><span class="p">]</span> <span class="c1">#see https://github.com/ACiDS-NU/nu_open_policing/blob/master/Visualization%20of%20IL%20Highway%20Policing%20Data.ipynb</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#32CD32&#39;</span><span class="p">,</span> <span class="s1">&#39;#1D951B&#39;</span><span class="p">]</span>
+<span class="n">super_title</span> <span class="o">=</span> <span class="s1">&#39;Illinois Traffic Policing Data (2004-2015)&#39;</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Total Traffic Stops vs Time of Day&#39;</span><span class="p">,</span> 
+          <span class="s1">&#39;Total Searches (after Stop) vs Time of Day&#39;</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">polar_time_lineplot</span><span class="p">(</span><span class="n">dat</span><span class="p">,</span> <span class="n">colr</span><span class="p">,</span> <span class="n">titl</span><span class="p">,</span> <span class="n">super_title</span><span class="p">,</span> <span class="n">nrow</span><span class="p">,</span> <span class="n">ncol</span><span class="p">,</span> <span class="n">num_tick</span><span class="o">=</span><span class="mi">8</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Creates a series of polar subplots to mimic a 24-hour clock (cyles back onto itself)</span>
+<span class="sd">    dat -&gt; list of y-data (can be list of arrays, Series, etc.)</span>
+<span class="sd">    colr -&gt; list of colors (should be same length as number of data arrays)</span>
+<span class="sd">    titl -&gt; list of titles (should be same length as number of data arrays)</span>
+<span class="sd">    super_title -&gt; title to go above subplots (describe data source, for ex.)</span>
+<span class="sd">    nrow, ncol -&gt; dimensions of subplots, (nrow) x (ncol) &lt;= len(dat)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrow</span><span class="p">,</span> <span class="n">ncol</span><span class="p">,</span> 
+                            <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="n">subplot_kw</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;polar&#39;</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ax</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">axes</span><span class="p">):</span>
+        <span class="c1"># &#39;radian&#39; array for time segements</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dat</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># duplicate startpt for line continuous w/ endpt</span>
+        <span class="n">dat</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dat</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">dat</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="c1"># plot</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">dat</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colr</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+        <span class="c1"># Polar clock formating</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_theta_zero_location</span><span class="p">(</span><span class="s2">&quot;N&quot;</span><span class="p">)</span> <span class="c1">#0:00 at top (&#39;north&#39;)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_theta_direction</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#clockwise polarity</span>
+        <span class="n">ticks</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">hr</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;:00&#39;</span> <span class="k">for</span> <span class="n">hr</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="n">hr_tick_int</span><span class="o">+</span><span class="mi">1</span><span class="p">)][:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ticks</span><span class="p">)</span> <span class="c1">#more elegant solution might use matplotlib.dates</span>
+        <span class="c1"># General formatting</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">get_major_formatter</span><span class="p">()</span><span class="o">.</span><span class="n">set_powerlimits</span><span class="p">((</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">get_offset_text</span><span class="p">()</span><span class="o">.</span><span class="n">set_position</span><span class="p">([</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="c1"># hard-coded, not smart</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">titl</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">(</span><span class="n">h_pad</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="n">super_title</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">polar_time_lineplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">colors</span><span class="p">,</span> <span class="n">titles</span><span class="p">,</span> <span class="n">super_title</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+      </div>
+      <div class="back-to-top">
+          <a href="#top">back to top</a>
+      </div>
+    </article>
+  </div>
+<!-- end article -->
+                <footer>
+                    <div class="icons">
+                        <a href="https://github.com/monadnoc" target="_blank"><div class="icon-github icon"></div></a>
+                    </div>
+                    <p>© <script>document.write(moment().format('YYYY'));</script> Jordan Nelson</p>
+                </footer>
+        </div>
+</body>
+</html>
