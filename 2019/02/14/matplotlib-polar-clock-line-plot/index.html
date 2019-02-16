@@ -87,10 +87,10 @@
         </header>
       <div class="content">
          <h3>When plotting a line with a time (24 hour) cycle across the x-axis like...</h3>
-<p><img alt="lineplot_timeseries" src="images/timeseries_lineplot.svg">
-...a polar plot that cycles back onto itself makes a lot more sense.</p>
-<p>Here's a simple example with subplots. The data here is downsampled into hours, so a binned histogram would be fine, but a line plot is utilized here to increase sense of area-under-the-curve and relationship between points. Ideally, this could be generalized to much smaller binned time increments that might otherwise be too fine for histograms. For that, the tick axis should be intelligently redesigned with <code>matplotlib.dates</code>
-<img alt="lineplot_timeseries" src="images/total_time_polar_plots.svg"></p>
+<p><img alt="timeseries_lineplot" src="http://www.itsnotyou-its.me/images/timeseries_lineplot.svg">
+...a polar plot that cycles back onto itself like a clock makes a lot more sense.</p>
+<p>Below is a simple example with subplots. The data here is downsampled into hours, so a binned histogram would be fine, but a line plot is utilized here to increase sense of area-under-the-curve and relationship between points. Ideally, this could be generalized to much smaller binned time increments that might otherwise be too fine for histograms. For that, the tick axis should be intelligently redesigned with <code>matplotlib.dates</code>
+<img alt="polarplot_timeseries" src="http://www.itsnotyou-its.me/images/total_time_polar_plots.svg"></p>
 <div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">time_data</span><span class="o">.</span><span class="n">n_stops</span><span class="p">,</span> <span class="n">time_data</span><span class="o">.</span><span class="n">n_searches</span><span class="p">]</span> <span class="c1">#see https://github.com/ACiDS-NU/nu_open_policing/blob/master/Visualization%20of%20IL%20Highway%20Policing%20Data.ipynb</span>
 <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#32CD32&#39;</span><span class="p">,</span> <span class="s1">&#39;#1D951B&#39;</span><span class="p">]</span>
 <span class="n">super_title</span> <span class="o">=</span> <span class="s1">&#39;Illinois Traffic Policing Data (2004-2015)&#39;</span>
